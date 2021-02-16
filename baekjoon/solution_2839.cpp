@@ -1,8 +1,8 @@
 #include <iostream>
-#include "solution.h"
 
 using namespace std;
 
-void solution_2839() {
+int main (){
     cout << "Hello_solution_2839" << endl;
+    return 0;
 }
