@@ -10,7 +10,7 @@ int main(void) {
 
   for(int i = 0; i < t; i++) {
     cin >> h >> w >> n;
-    if (n == h) {
+    if (h >= n) {
       room = n*100 + 1;
     }
     else {
