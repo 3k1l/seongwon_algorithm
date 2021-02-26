@@ -34,8 +34,24 @@ int main()
     Pswap(&num1, &num2);    // 포인터 변수를 서로 바꿈
     cout << "After calling Pswap()" << endl << "num1 = " << num1 << " and " << "num2 = " << num2 << endl;
 
-    Rswap(num1, num2);    // 포인터 변수를 서로 바꿈
+    Rswap(num1, num2);    // 레퍼런스 변수를 서로 바꿈
     cout << "After calling Rswap()" << endl << "num1 = " << num1 << " and " << "num2 = " << num2 << endl;
 
     return 0;
+}
+
+void Pswap(int * a, int * b)
+{
+    int temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void Rswap(int & a, int & b)
+{
+    int temp;
+    temp = a;
+    a = b;
+    b = temp;
 }
