@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 #define MAX 100
 
@@ -44,23 +45,23 @@ int main() {
             }
         }
     }
-
+/*
     cout << endl;
-
     for (int x = 0; x < M; x++) {
         for (int y = 0; y < N; y++) {
             cout << map[x][y] << ' ';
         }
         cout << endl;
     }
-
     cout << endl;
-
+*/
     for (int x = 0; x < M; x++) {
         for (int y = 0; y < N; y++) {
-            cnt = 0;
-            dfs(x,y);
-            result.push_back(cnt);
+            if (map[x][y] == 0 && !visit[x][y]) {
+                cnt = 0;
+                dfs(x,y);
+                result.push_back(cnt);
+            }
         }
     }
 
