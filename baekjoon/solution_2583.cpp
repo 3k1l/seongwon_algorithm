@@ -45,7 +45,7 @@ int main() {
             }
         }
     }
-/*
+
     cout << endl;
     for (int x = 0; x < M; x++) {
         for (int y = 0; y < N; y++) {
@@ -54,7 +54,7 @@ int main() {
         cout << endl;
     }
     cout << endl;
-*/
+
     for (int x = 0; x < M; x++) {
         for (int y = 0; y < N; y++) {
             if (map[x][y] == 0 && !visit[x][y]) {

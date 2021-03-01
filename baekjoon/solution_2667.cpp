@@ -17,7 +17,11 @@ vector<int> result;
 
 void dfs(int x, int y) {
     visit[x][y] = true;
-    cnt++;
+    if(map[x][y] == 1) {
+        cnt++;
+    }
+    //cnt++;
+    cout << "cnt : " << cnt << endl;
     
     for(int i = 0; i < 4; i++) {
         nx = x + dx[i];
@@ -36,17 +40,35 @@ int main() {
     cin >> n;
 
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j ++) {
-            cin  >> map[i][j];
+        for (int j = 0; j < n; j++) {
+            //map[i][j] = x;
+            scanf("%1d", &map[i][j]);
         }
     }
-
+/*
+    cout << endl;
     for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j ++) {
+        for (int j = 0; j < n; j++) {
+                cout << map[i][j];
+            }
+            cout << endl;
+    }
+    cout << endl;
+*/
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
             if(map[i][j] == 1 && !visit[i][j]) {
                 cnt = 0;
                 dfs(i,j);
                 result.push_back(cnt);
+                cout << endl;
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) {
+                            cout << visit[i][j];
+                        }
+                        cout << endl;
+                }
+                cout << endl;
             }
         }
     }
