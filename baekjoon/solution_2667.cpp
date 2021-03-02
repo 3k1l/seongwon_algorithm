@@ -21,7 +21,7 @@ void dfs(int x, int y) {
         cnt++;
     }
     //cnt++;
-    cout << "cnt : " << cnt << endl;
+    cout << "cnt : " << cnt << " [x = " << x << ", y = " << y << "]" << endl;
     
     for(int i = 0; i < 4; i++) {
         nx = x + dx[i];
