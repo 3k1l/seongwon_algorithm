@@ -20,14 +20,14 @@ void dfs(int x, int y) {
     if(map[x][y] == 1) {
         cnt++;
     }
-    //cnt++;
-    cout << "cnt : " << cnt << " [x = " << x << ", y = " << y << "]" << endl;
+    //cout << "cnt : " << cnt << " [x = " << x << ", y = " << y << "]" << endl;
     
     for(int i = 0; i < 4; i++) {
         nx = x + dx[i];
         ny = y + dy[i];
 
-        if ((0 <= nx < n) && (0 <= ny < n)) {
+        //if ((0 <= nx < n) && (0 <= ny < n)) {                 // wrong
+        if ((0 <= nx) && (nx < n) && (0 <= ny) && (ny < n)) {
             if (map[nx][ny] == 1 && !visit[nx][ny]) {
                 dfs(nx,ny);
             }
@@ -61,6 +61,7 @@ int main() {
                 cnt = 0;
                 dfs(i,j);
                 result.push_back(cnt);
+/*
                 cout << endl;
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < n; j++) {
@@ -69,6 +70,7 @@ int main() {
                         cout << endl;
                 }
                 cout << endl;
+*/
             }
         }
     }
