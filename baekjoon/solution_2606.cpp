@@ -31,6 +31,7 @@ int main() {
     for (int i = 1; i <= n; i++) {
         cin >> node >> neighbor_node;
         graph[node].push_back(neighbor_node);
+        graph[neighbor_node].push_back(node); // 반대쪽 node
     }
 
     dfs(1);
