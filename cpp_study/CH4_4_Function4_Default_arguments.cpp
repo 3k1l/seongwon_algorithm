@@ -1,3 +1,11 @@
+/*
+    @Default Arguments
+    
+    - default parameters : 매개 변수에 값이 넘어오지 않는 경우, 디폴트 값을 받도록 선언된 매개변수
+    ex) void star(int a = 5); // 함수의 프로토타입에 default 값 설정
+        star(); == star(5);
+*/
+
 #include <iostream>
 //#include <conio.h>
 
@@ -7,7 +15,7 @@ int main()
 {
     float amount;
     float value (float p, int n, float r = 0.15);
-    void printline (char cha = '*', int len = 40);
+    void printline (char cha = '*', int len = 10);
 
     printline();
 
@@ -18,7 +26,7 @@ int main()
 
     printline('=');
 
-    getch();
+    //getch();
     return 0;
 }
 
