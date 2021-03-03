@@ -14,12 +14,12 @@ vector<int> graph[MAX];
 void dfs(int x) {
     visited[x] = true;
     cnt++;
+    //cout << "x = " << x << " cnt = " << cnt << endl;
 
-    for(int i = 1; i <= n; i++) {
-        for(int j = 0; j < graph[i].size(); j++) {
-            if(!visited[i]) {
-                dfs(i);
-            }
+    for (int i = 0; i < graph[x].size(); i++) {
+        int y = graph[x][i];
+        if (!visited[y]) {
+            dfs(y);
         }
     }
 }
@@ -33,6 +33,7 @@ int main() {
         graph[node].push_back(neighbor_node);
     }
 
-    dfs(4);
+    dfs(1);
+    cnt -= 1;
     cout << cnt << endl;
 }
