@@ -59,7 +59,6 @@ int main(void) {
                 y = ny;
             }
         }
-
     }
     cout << cnt;
     return 0;
