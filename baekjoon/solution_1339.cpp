@@ -1,5 +1,5 @@
 /*
-    어려우니까 나중에 다시 하쯔아
+    이상한 쓰레기값이 자꾸 저장됨
 */
 
 #include <iostream>
@@ -22,10 +22,6 @@ vector<long long> vec;
 
 int main()
 {
-    // for (int k = 0; k < 27; k++)
-    // {
-    //     cout << k << ": " << arr[k] << endl;
-    // }
     cin >> n;
 
     for(int i = 0; i < n; i++)
@@ -63,13 +59,4 @@ int main()
     cout << sum << endl;
 
     return 0;
-    // for(int i = 0; i < n; i++)
-    // {
-    //     cout << i << " : " << s[i] << " len = " << s[i].size() << endl;
-    //     for (int j = 0; j < s[i].size(); j++)
-    //     {
-    //         cout << s[i].at(j);
-    //     }
-    //     cout << endl;
-    // }
 }

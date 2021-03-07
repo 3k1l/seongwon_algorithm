@@ -9,4 +9,4 @@
 |5|[2667](https://www.acmicpc.net/problem/2667)|DFS|단지번호붙이기|Success|2021-03-02|1칸씩 입력받을땐 scanf|
 |6|[2606](https://www.acmicpc.net/problem/2606)|DFS|바이러스|Wrong!!|2021-03-03|답은 맞는데 틀림|
 |7|[1339](https://www.acmicpc.net/problem/1339)|Greedy|단어수학|Wrong|....-..-..|알수없는값이자꾸저장됨|
-|8|[1931](https://www.acmicpc.net/problem/1931)|Greedy|회의실배정|solving|....-..-..||
+|8|[1931](https://www.acmicpc.net/problem/1931)|Greedy|회의실배정|solving|....-..-..|vector<pair<int, int > >|
