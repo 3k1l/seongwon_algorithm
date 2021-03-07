@@ -6,19 +6,19 @@
 #include <string>
 #include <vector>
 #include <math.h>
+#include <algorithm>
 
 #define MAX 10
+#define LIMIT_VALUE 100000000
 
 using namespace std;
 
-int n;
-char len[MAX];
-// string s[MAX];
-int arr[MAX];
-int cnt;
-int sum;
+long long n;
+long long arr[MAX];
+long long cnt;
+long long sum;
 string str;
-vector<int> vec;
+vector<long long> vec;
 
 int main()
 {
@@ -26,7 +26,6 @@ int main()
     // {
     //     cout << k << ": " << arr[k] << endl;
     // }
-    int x;
     cin >> n;
 
     for(int i = 0; i < n; i++)
@@ -36,19 +35,24 @@ int main()
         for (int j = 0; j < str.size(); j++)
         {
             arr[str[j] - 'A'] += cnt;
+            //cout << "j: " << j << " str[j]: " << str[j] << " cnt: " << cnt << " delete A : " << str[j] - 'A' << endl;
             cnt /= 10;
-            //cout << "j: " << j << " str[j]: " << str[j] << " cnt: " << cnt << endl;
         }
     }
 
     for (int i = 0; i < 27; i++)
     {
-        //cout << i << ": " << arr[i] << endl;
-        if(arr[i]!=0)
+        if( (arr[i]!=0) && (arr[i] <= LIMIT_VALUE))
         {
             vec.push_back(arr[i]);
         }
+        //cout << i << ": " << arr[i] << endl;
     }
+    // for (int i = 0 ; i < vec.size(); i++)
+    // {
+    //     cout << i << " : " << vec[i] << endl;
+    // }
+
     sort(vec.begin(), vec.end());
     int value = 9;
     for (int i = vec.size() - 1; i >= 0; i--)
@@ -59,7 +63,6 @@ int main()
     cout << sum << endl;
 
     return 0;
-    // len[i] = s[i].size();
     // for(int i = 0; i < n; i++)
     // {
     //     cout << i << " : " << s[i] << " len = " << s[i].size() << endl;
