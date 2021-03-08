@@ -28,13 +28,25 @@ int main()
     {
         cin >> str;
         cnt = pow(10,(str.size()-1));
+        cout << "str : " << str << " size : " << str.size() << " sizeof : " << sizeof(str) << endl;
+        cout << "cnt : " << cnt << endl;
+
         for (int j = 0; j < str.size(); j++)
         {
-            arr[str[j] - 'A'] += cnt;
-            //cout << "j: " << j << " str[j]: " << str[j] << " cnt: " << cnt << " delete A : " << str[j] - 'A' << endl;
+            cout << "size : " << str.size() << endl;
+            int x = str[j] - 'A';
+            cout << "x : " << x << endl;
+            arr[x] += cnt;
+            cout << "j: " << j << " str[j]: " << str[j] << " cnt: " << cnt << " delete A : " << str[j] - 'A' << endl;
             cnt /= 10;
         }
+        for (int k = 0; k < 27; k++)
+        {
+            cout << "@ " << k << ": " << arr[k] << endl;
+        }
     }
+
+
 
     for (int i = 0; i < 27; i++)
     {
@@ -42,7 +54,7 @@ int main()
         {
             vec.push_back(arr[i]);
         }
-        //cout << i << ": " << arr[i] << endl;
+        cout << i << ": " << arr[i] << endl;
     }
     // for (int i = 0 ; i < vec.size(); i++)
     // {
