@@ -1,49 +1,24 @@
 #include <iostream>
-
+#include <algorithm>
 using namespace std;
 
 int n;
-int cnt;
-
+int dp[1000000];
 int main()
 {
-    while(true){
     cin >> n;
-    cnt = 0;
-
-    while (n != 1)
+    for (int i = 2; i <= n; i++)
     {
-        if(n%3 == 0)
-        {
-            n /= 3;
-            cnt ++;
-            cout << "n : " << n << ", cnt : " << cnt << endl;
-            if(1 == n)
-                break;
-        }
-        else if(n%2 == 0)
-        {
-            if( (n-1) >= 3)
-            {
-                n -= 1;
-                cnt ++;
-                cout << "n : " << n << ", cnt : " << cnt << endl;
-                continue;
-            }
-            n /= 2;
-            cnt ++;
-            cout << "n : " << n << ", cnt : " << cnt << endl;
-            if(1 == n)
-                break;
-        }
-        else
-        {
-            n -= 1;
-            cnt ++;
-            cout << "n : " << n << ", cnt : " << cnt << endl;
-            if(1 == n)
-                break;
-        }
+        dp[i] = dp[i-1] + 1;
+        if(i % 2 == 0)
+            dp[i] = min(dp[i], dp[i/2]+1);
+        if(i % 3 == 0)
+            dp[i] = min(dp[i], dp[i/3]+1);
     }
-    cout << "out : " << cnt << endl;}
+    for (int j = 0; j <= n; j++)
+    {
+        cout << "dp[" << j << "]: " << dp[j] << endl;
+    }
+
+    cout << dp[n] << endl;
 }
