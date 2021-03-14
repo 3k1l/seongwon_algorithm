@@ -8,13 +8,12 @@ int result;
 
 int main()
 {
-    while(1){
     result = 0;
     cin >> n;
     dp[1] = 1;
     dp[2] = 2;
     if(n <= 2)
-        cout << dp << endl;
+        cout << dp[n] << endl;
     else
     {
         for (int i = 3; i <= n; i++)
@@ -24,7 +23,6 @@ int main()
     }
     result = dp[n] % 10007;
     cout << result << endl;
-    }
     // for (int j = 0; j <= n; j++)
     // {
     //     cout << j << " : " << dp[j] << endl;
