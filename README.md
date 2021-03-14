@@ -12,3 +12,4 @@
 |8|[1931](https://www.acmicpc.net/problem/1931)|Greedy|회의실배정|fail|....-..-..|vector<pair<int, int > >|
 |9|[1946](https://www.acmicpc.net/problem/1946)|Greedy|신입사원|Success|2021-03-07|pair클래스 정렬|
 |10|[1463](https://www.acmicpc.net/problem/1463)|Dynamic|1로만들기|Success|2021-03-14||
+|10|[11726](https://www.acmicpc.net/problem/11726)|Dynamic|2xN타일링||2021-03-14||

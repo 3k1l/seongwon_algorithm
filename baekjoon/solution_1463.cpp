@@ -15,10 +15,10 @@ int main()
         if(i % 3 == 0)
             dp[i] = min(dp[i], dp[i/3]+1);
     }
-    for (int j = 0; j <= n; j++)
-    {
-        cout << "dp[" << j << "]: " << dp[j] << endl;
-    }
+    // for (int j = 0; j <= n; j++)
+    // {
+    //     cout << "dp[" << j << "]: " << dp[j] << endl;
+    // }
 
     cout << dp[n] << endl;
 }
