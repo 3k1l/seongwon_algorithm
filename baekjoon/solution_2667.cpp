@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <queue>
+
 #define MAX 25
 
 using namespace std;
@@ -33,7 +35,37 @@ void dfs(int x, int y) {
             }
         }
     }
+}
 
+void bfs(int x, int y)
+{
+    queue<pair<int, int > > q;
+    q.push(make_pair(x,y));
+
+    while(!q.empty())
+    {
+        int x = q.front().first;
+        int y = q.front().second;
+        q.pop();
+
+        for (int i = 0; i < 4; i++)
+        {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            if ( nx < 0 || nx >= n || ny < 0 || ny >= n)
+                continue;
+
+            if (map[nx][ny] == 0)
+                continue;
+
+            if (map[nx][ny] == 1)
+            {
+                map[nx][ny] = map[x][y] + 1;
+                q.push(make_pair(nx,ny));
+            }
+        }
+    }
 }
 
 int main() {
