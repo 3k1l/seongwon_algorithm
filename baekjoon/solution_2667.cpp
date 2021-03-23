@@ -37,19 +37,20 @@ void dfs(int x, int y) {
     }
 }
 
-void bfs(int x, int y)
-{
+void bfs(int x, int y){
     queue<pair<int, int > > q;
     q.push(make_pair(x,y));
 
-    while(!q.empty())
-    {
+    if(map[x][y] == 1) {
+        cnt++;
+    }
+
+    while(!q.empty()){
         int x = q.front().first;
         int y = q.front().second;
         q.pop();
 
-        for (int i = 0; i < 4; i++)
-        {
+        for (int i = 0; i < 4; i++){
             int nx = x + dx[i];
             int ny = y + dy[i];
 
@@ -59,8 +60,7 @@ void bfs(int x, int y)
             if (map[nx][ny] == 0)
                 continue;
 
-            if (map[nx][ny] == 1)
-            {
+            if (map[nx][ny] == 1){
                 map[nx][ny] = map[x][y] + 1;
                 q.push(make_pair(nx,ny));
             }
@@ -91,7 +91,8 @@ int main() {
         for (int j = 0; j < n; j++) {
             if(map[i][j] == 1 && !visit[i][j]) {
                 cnt = 0;
-                dfs(i,j);
+                //dfs(i,j);
+                bfs(i,j);
                 result.push_back(cnt);
 /*
                 cout << endl;
