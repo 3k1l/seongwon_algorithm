@@ -1,6 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <queue>
+
 #define MAX 25
 
 using namespace std;
@@ -15,25 +17,30 @@ bool visit[MAX][MAX];
 
 vector<int> result;
 
-void dfs(int x, int y) {
-    visit[x][y] = true;
-    if(map[x][y] == 1) {
-        cnt++;
-    }
-    //cout << "cnt : " << cnt << " [x = " << x << ", y = " << y << "]" << endl;
-    
-    for(int i = 0; i < 4; i++) {
-        nx = x + dx[i];
-        ny = y + dy[i];
+void bfs(int x, int y){
+    queue<pair<int, int > > q;
+    q.push(make_pair(x,y));
 
-        //if ((0 <= nx < n) && (0 <= ny < n)) {                 // wrong
-        if ((0 <= nx) && (nx < n) && (0 <= ny) && (ny < n)) {
-            if (map[nx][ny] == 1 && !visit[nx][ny]) {
-                dfs(nx,ny);
+    visit[x][y] = true;
+    cnt++;
+
+    cout << "cnt : " << cnt << " [x = " << x << ", y = " << y << "]" << endl;
+
+    while(!q.empty()){
+        int x = q.front().first;
+        int y = q.front().second;
+        q.pop();
+
+        for (int i = 0; i < 4; i++){
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+            if (map[nx][ny] == 1 && visit[nx][ny] == false){
+                cnt++;
+                q.push(make_pair(nx,ny));
             }
         }
     }
-
 }
 
 int main() {
@@ -59,18 +66,17 @@ int main() {
         for (int j = 0; j < n; j++) {
             if(map[i][j] == 1 && !visit[i][j]) {
                 cnt = 0;
-                dfs(i,j);
+                bfs(i,j);
                 result.push_back(cnt);
-/*
-                cout << endl;
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < n; j++) {
-                            cout << visit[i][j];
-                        }
-                        cout << endl;
-                }
-                cout << endl;
-*/
+
+                // cout << endl;
+                // for (int i = 0; i < n; i++) {
+                //     for (int j = 0; j < n; j++) {
+                //             cout << visit[i][j];
+                //         }
+                //         cout << endl;
+                // }
+                // cout << endl;
             }
         }
     }
