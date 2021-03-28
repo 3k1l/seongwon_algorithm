@@ -35,9 +35,11 @@ void bfs(int x, int y){
             int nx = x + dx[i];
             int ny = y + dy[i];
 
-            if (map[nx][ny] == 1 && visit[nx][ny] == false){
-                cnt++;
-                q.push(make_pair(nx,ny));
+            if ((0 <= nx) && (nx < n) && (0 <= ny) && (ny < n)) {
+                if (map[nx][ny] == 1 && !visit[nx][ny]) {
+                    cnt++;
+                    q.push(make_pair(nx,ny));
+                }
             }
         }
     }
@@ -48,7 +50,6 @@ int main() {
 
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < n; j++) {
-            //map[i][j] = x;
             scanf("%1d", &map[i][j]);
         }
     }
