@@ -25,7 +25,7 @@
     - 내부자가 혹시나 본인의 역할에 걸맞지 않는 행동을 했을 때 시스템 로그를 통해서 자동적으로 detect를 할 수 있을지
 
 ## 5. Classification vs Anomaly Detection
-    https://developer.mindsphere.io/apis/analytics-anomalydetection/images/DBSCAN.png
+    ![image](https://user-images.githubusercontent.com/58695532/113027125-b1f25b80-91c4-11eb-9466-c7a913cfb2ae.png)
     - Binary classification
         - 지도학습관점에서는 정상데이터와 비정상데이터의 경계를 찾는데 초점이 있다.
         이때 새로운 데이터(정상범주에 속하지 않은)가 들어오면 정상데이터라고 판단한다.
@@ -40,8 +40,7 @@
     - 두번째 가정 : abnormal데이터를 사용하지 않고 normal 데이터로만 학습시켜야한다.
 
 ## 8. Classification vs. Anomaly Detection
-    Is there a severe class imbalance?  -> Yes : Anomaly Detection / No : Classification
-    Are there sufficient minority class examples? -> Yes : Classification / No : Anomaly Detection
+    - ![image](https://user-images.githubusercontent.com/58695532/113027282-db12ec00-91c4-11eb-8a40-f5b8c5e5e9af.png)
 
 ## 9. Type of Abnormal Data (Outliers)
     - Global outlier
@@ -57,5 +56,6 @@
     - Training관점에서 학습은 normal만 가지고 하지만 Test 관점에서는 abnormal도 같이 있어야한다.
     - Equal error rate (EER) : Error rate where the FAR and FRR are the same
     - Integrated Error (IE) : the area under the FRR-FAR curve
+    - ![image](https://user-images.githubusercontent.com/58695532/113027465-157c8900-91c5-11eb-9017-b92b1b7ee8f8.png)
 
-<https://wujincheon.github.io/wujincheon.github.io/machine%20learning/2018/10/30/noveltydetection1.html>
+< 출처 : https://www.youtube.com/watch?v=ECgI1YVQpY8&list=PLetSlH8YjIfWMdw9AuLR5ybkVvGcoG2EW&index=15 >
