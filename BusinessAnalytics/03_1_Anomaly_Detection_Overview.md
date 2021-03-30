@@ -1,4 +1,4 @@
-# Anomaly Detection
+# Anomaly Detection - Gauss & MoG
 
 ## 1. Machine Learning
     - Supervised Learning(지도 학습) // y = f(x)
