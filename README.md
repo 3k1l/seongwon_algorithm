@@ -19,3 +19,4 @@
 |15|[7576](https://www.acmicpc.net/problem/7576)|BFS|토마토|fail|0000-00-00||
 |16|[1065](https://www.acmicpc.net/problem/1065)|Bruteforcing|한수|Success|2021-03-28||
 |17|[2798](https://www.acmicpc.net/problem/2798)|Bruteforcing|JACK|Success|2021-04-04||
+|18|[7568](https://www.acmicpc.net/problem/7568)|Bruteforcing|덩치|Success|2021-04-04||
