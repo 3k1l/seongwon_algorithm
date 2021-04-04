@@ -18,3 +18,4 @@
 |14|[2667](https://www.acmicpc.net/problem/2667)|BFS|단지번호붙이기|fail|0000-00-00||
 |15|[7576](https://www.acmicpc.net/problem/7576)|BFS|토마토|fail|0000-00-00||
 |16|[1065](https://www.acmicpc.net/problem/1065)|Bruteforcing|한수|Success|2021-03-28||
+|17|[2798](https://www.acmicpc.net/problem/2798)|Bruteforcing|JACK|Success|2021-04-04||
