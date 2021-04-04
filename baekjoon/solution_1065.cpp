@@ -31,6 +31,4 @@ int main()
         }
         cout << 99+cnt << endl;
     }
-    
-
 }
