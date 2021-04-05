@@ -18,16 +18,16 @@ int main()
     {
         for (int i = 3; i <= n; i++)
         {
-            dp[i] = dp[i-1] + dp[i-2];
+            //dp[i] = dp[i-1] + dp[i-2];            // wrong
+            dp[i] = (dp[i-1] + dp[i-2]) % 10007;
         }
+        //result = dp[n] % 10007;                   // wrong
+        cout << result << endl;
     }
-    result = dp[n] % 10007;
-    cout << result << endl;
     // for (int j = 0; j <= n; j++)
     // {
     //     cout << j << " : " << dp[j] << endl;
     // }
-
 }
 /*
 1 = 1   |
