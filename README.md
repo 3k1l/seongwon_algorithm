@@ -13,7 +13,7 @@
 |9|[1946](https://www.acmicpc.net/problem/1946)|Greedy|신입사원|Success|2021-03-07|pair클래스 정렬|
 |10|[1463](https://www.acmicpc.net/problem/1463)|Dynamic|1로만들기|Success|2021-03-14||
 |11|[11726](https://www.acmicpc.net/problem/11726)|Dynamic|2xN타일링|Success|2021-04-06|연산 순서 주의|
-|12|[9095](https://www.acmicpc.net/problem/9095)|Dynamic|1,2,3더하기|fail|2021-03-14|맞왜틀|
+|12|[9095](https://www.acmicpc.net/problem/9095)|Dynamic|1,2,3더하기|Success|2021-04-08|입출력다시확인|
 |13|[2178](https://www.acmicpc.net/problem/2178)|BFS|미로탐색|Success|2021-03-17||
 |14|[2667](https://www.acmicpc.net/problem/2667)|BFS|단지번호붙이기|fail|0000-00-00||
 |15|[7576](https://www.acmicpc.net/problem/7576)|BFS|토마토|fail|0000-00-00||
