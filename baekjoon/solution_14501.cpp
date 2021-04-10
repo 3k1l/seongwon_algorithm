@@ -1,31 +1,31 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
 int n;
-int t, p;
-int day;
-int price;
-vector<pair<int, int> > counsel;
-vector<int> profit;
+int T[16];
+int P[16];
+int dp[16];
 
 int main(void)
 {
     cin >> n;
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
-        cin >> t >> p;
-        counsel.push_back(make_pair(t,p));
+        cin >> T[i] >> P[i];
     }
 
-    // for (int i = 0; i < n; i++)
-    // {
-    //     cout << counsel[i].first << " " << counsel[i].second << endl;
-    // }
-
-    for (int i = 0; i < n; i++)
+    for (int i = n; i >= 1; i--)
     {
-        day += counsel[i].first;
+        if(i + T[i] - 1 > n)
+        {
+            dp[i] = dp[i+1];
+            continue;
+        }
+        dp[i] = max(dp[i + T[i]] + P[i], dp[i+1]);
     }
+    cout << dp[1] << endl;
+
+    return 0;
+
 }
