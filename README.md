@@ -20,4 +20,5 @@
 |16|[1065](https://www.acmicpc.net/problem/1065)|Bruteforcing|한수|Success|2021-03-28||
 |17|[2798](https://www.acmicpc.net/problem/2798)|Bruteforcing|JACK|Success|2021-04-04||
 |18|[7568](https://www.acmicpc.net/problem/7568)|Bruteforcing|덩치|Success|2021-04-04||
-|19|[14501](https://www.acmicpc.net/problem/14501)|Dynamic|퇴사||0000-00-00||
+|19|[14501](https://www.acmicpc.net/problem/14501)|Dynamic|퇴사|Retry|0000-00-00||
+|20|[2579](https://www.acmicpc.net/problem/2579)|Dynamic|계단오르기|Success|2021-04-11||

@@ -27,5 +27,4 @@ int main(void)
     cout << dp[1] << endl;
 
     return 0;
-
 }
