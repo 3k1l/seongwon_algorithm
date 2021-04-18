@@ -23,4 +23,6 @@
 |19|[14501](https://www.acmicpc.net/problem/14501)|Dynamic|퇴사|Retry|0000-00-00||
 |20|[2579](https://www.acmicpc.net/problem/2579)|Dynamic|계단오르기|Success|2021-04-11||
 |21|[1149](https://www.acmicpc.net/problem/1149)|Dynamic|RGB거리|Success|2021-04-11||
-|21|[1932](https://www.acmicpc.net/problem/1932)|Dynamic|The Triangle|Success|2021-04-18||
+|22|[1932](https://www.acmicpc.net/problem/1932)|Dynamic|The Triangle|Success|2021-04-18||
+|23|[11399](https://www.acmicpc.net/problem/11399)|Greedy|ATM|Success|2021-04-18||
+|24|[13305](https://www.acmicpc.net/problem/13305)|Greedy|주유소|Success|2021-04-18||

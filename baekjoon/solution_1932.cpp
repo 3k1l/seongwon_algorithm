@@ -39,25 +39,7 @@ int main()
     cout << sum << endl;
 }
 
-/*** dfs method ***/
-// void dfs(int x, int y)
-// {
-//     visit[x][y] = true;
-//     sum += tri[x][y];
-
-//     for(int i = 0; i < 2; i++)
-//     {
-//         int nx = x + dx[i];
-//         int ny = y + dy[i];
-
-//         if((nx < n) & (ny < n))
-//         {
-//             cout << "sum : " << sum;
-//             cout << "nx : " << nx << " ny : " << ny << endl;
-//             dfs(nx,ny);
-//         }
-//     }
-// }
+/*** dynamic method ***/
 
 // int main()
 // {
@@ -70,8 +52,6 @@ int main()
 //             tri[i].push_back(x);
 //         }
 //     }
-//     dfs(0,0);
-//     cout << "final sum : " << sum << endl;
 
 //     return 0;
 // }
