@@ -26,3 +26,4 @@
 |22|[1932](https://www.acmicpc.net/problem/1932)|Dynamic|The Triangle|Success|2021-04-18||
 |23|[11399](https://www.acmicpc.net/problem/11399)|Greedy|ATM|Success|2021-04-18||
 |24|[13305](https://www.acmicpc.net/problem/13305)|Greedy|주유소|Success|2021-04-18||
+|25|[4673](https://www.acmicpc.net/problem/4673)|Implementation|Self Numbers|Success|2021-04-25||
