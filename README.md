@@ -27,3 +27,4 @@
 |23|[11399](https://www.acmicpc.net/problem/11399)|Greedy|ATM|Success|2021-04-18||
 |24|[13305](https://www.acmicpc.net/problem/13305)|Greedy|주유소|Success|2021-04-18||
 |25|[4673](https://www.acmicpc.net/problem/4673)|Implementation|Self Numbers|Success|2021-04-25||
+|26|[1316](https://www.acmicpc.net/problem/1316)|Implementation|그룹단어체커|Success|2021-04-25||
