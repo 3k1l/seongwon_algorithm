@@ -29,3 +29,4 @@
 |25|[4673](https://www.acmicpc.net/problem/4673)|Implementation|Self Numbers|Success|2021-04-25||
 |26|[1316](https://www.acmicpc.net/problem/1316)|Implementation|그룹단어체커|Success|2021-04-25||
 |27|[2941](https://www.acmicpc.net/problem/2941)|Implementation|LJESNJAK|fail|2021-04-25|메모리초과|
+|28|[1012](https://www.acmicpc.net/problem/1012)|DFS|유기농배추|fail|2021-05-02|맞왜틀|
