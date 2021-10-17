@@ -18,6 +18,9 @@
 				"&&",	//to join building and running of the file
 				"${fileDirname}/${fileBasenameNoExtension}.out",
 				
+				"&&",	// delete *.out file
+				"rm",
+				"${fileDirname}/${fileBasenameNoExtension}.out"
 
 				// 2. file input
 				/* // if you use this option, you can use input file instead of stdin
